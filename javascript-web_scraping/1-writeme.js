@@ -6,5 +6,4 @@ fs.writeFile(process.argv[2], process.argv[3], (err) => {
     console.error(err);
     return;
   }
-  console.log(process.argv[3])
 });
