@@ -1,4 +1,5 @@
 #!/usr/bin/node
+// script that prints the number of movies where Wedge Antilles is present
 const request = require('request');
 const url = `${process.argv[2]}`;
 
