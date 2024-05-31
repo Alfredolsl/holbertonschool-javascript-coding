@@ -7,13 +7,13 @@ request({ url: `${url}`, json: true }, (error, response, body) => {
     console.error('Error fetching the URL:', error);
     return;
   }
-  results = body.results;
+  const results = body.results;
   let appearances = 0;
   for (let i = 0; i < results.length; i++) {
     const characters = results[i].characters;
     for (let j = 0; j < characters.length; j++) {
-      if (characters[j].includes('18')){
-	appearances++;
+      if (characters[j].includes('18')) {
+        appearances++;
       }
     }
   }
