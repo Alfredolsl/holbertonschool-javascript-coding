@@ -17,7 +17,7 @@ request(url, (error, response, body) => {
     const completed = json[i].completed;
 
     // check if user is not in tasksDoneByUsers to add user
-    if (!(userID in tasksDoneByUsers)) {
+    if (!(userID in tasksDoneByUsers) && completed) {
       tasksDoneByUsers[userID] = 0;
     }
     // check if task is completed
